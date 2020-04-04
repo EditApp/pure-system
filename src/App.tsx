@@ -13,7 +13,8 @@ export default function App(props: any): JSX.Element {
             <nav>
               <Link to="/">Home</Link>
               <h5>Components :</h5>
-              <Link to="/todolist">Tdo List</Link>
+              <Link to="/todolist">Todo List</Link>
+              <Link to="/dragdrop">Drag Drop</Link>
 
               <h5>Modules :</h5>
 

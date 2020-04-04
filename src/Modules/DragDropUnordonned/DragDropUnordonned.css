@@ -1,0 +1,15 @@
+.flexbox {
+  display: flex;
+  border: 1px solid red;
+}
+.board {
+  background-color: darkslategrey;
+  padding: 20px;
+  margin: 20px;
+}
+
+.card {
+  background-color: yellowgreen;
+  padding: 20px;
+  margin: 20px;
+}

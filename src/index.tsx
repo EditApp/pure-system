@@ -6,6 +6,7 @@ import "react-app-polyfill/ie11";
 import "./index.css";
 import App from "./App";
 import TodoList from "./Components/TodoList";
+import DragDropUnordonned from "./Modules/DragDropUnordonned/DragDropUnordonned";
 import HomePage from "./Modules/FavUnfav/HomePage";
 import FavPage from "./Modules/FavUnfav/FavPage";
 
@@ -24,6 +25,7 @@ ReactDOM.render(
       <RouterPage pageComponent={<HomePage />} path="/home" />
       <RouterPage pageComponent={<FavPage />} path="/faves" />
       <RouterPage pageComponent={<TodoList />} path="/todolist" />
+      <RouterPage pageComponent={<DragDropUnordonned />} path="/dragdrop" />
     </App>
   </Router>,
 

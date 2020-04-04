@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { newId } from "../Helpers/Id";
 type FormElem = React.FormEvent<HTMLFormElement>;
 
 interface ITodo {
@@ -11,10 +11,6 @@ interface ITodo {
 export default function TodoList(): JSX.Element {
   const [value, setValue] = useState<string>("");
   const [todos, setTodos] = useState<ITodo[]>([]);
-
-  const newId = () => {
-    return Math.round(Math.random() * 100);
-  };
 
   const handleSubmit = (e: FormElem): void => {
     e.preventDefault();
@@ -31,6 +27,7 @@ export default function TodoList(): JSX.Element {
   const removeTodo = (index: number): void => {
     const newTodos: ITodo[] = [...todos];
     newTodos.splice(index, 1);
+
     setTodos(newTodos);
   };
   const completeTodos = (index: number): void => {
