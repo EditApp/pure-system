@@ -20,7 +20,7 @@ export default function TodoList(): JSX.Element {
   const addTodo = (phrase: string): void => {
     const newTodo: ITodo[] = [
       ...todos,
-      { id: newId(), text: phrase, complete: false }
+      { id: newId(), text: phrase, complete: false },
     ];
     setTodos(newTodo);
   };
@@ -43,7 +43,7 @@ export default function TodoList(): JSX.Element {
         <input
           type="text"
           value={value}
-          onChange={e => setValue(e.target.value)}
+          onChange={(e) => setValue(e.target.value)}
           required
         />
         <button type="submit">Add todo</button>

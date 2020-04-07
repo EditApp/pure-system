@@ -19,6 +19,7 @@ export default function App(props: any): JSX.Element {
               <h5>Modules :</h5>
 
               <Link to="/favourit-module">Favourites Module</Link>
+              <Link to="/form">Form Creator</Link>
             </nav>
           </aside>
         </div>

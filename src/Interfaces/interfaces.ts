@@ -30,3 +30,18 @@ export interface IEpisodeProps {
   ) => IAction;
   favourites: Array<IEpisode>;
 }
+
+export interface IInput {
+  id?: string;
+  value?: string;
+  label: string;
+  type: string;
+  onChangeInput?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}
+export interface ISelect {
+  id?: string;
+  value?: string;
+  label: string;
+  options: any;
+  selectChange?: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+}

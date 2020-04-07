@@ -9,6 +9,7 @@ import TodoList from "./Components/TodoList";
 import DragDropUnordonned from "./Modules/DragDropUnordonned/DragDropUnordonned";
 import HomePage from "./Modules/FavUnfav/HomePage";
 import FavPage from "./Modules/FavUnfav/FavPage";
+import AppForm from "./Modules/FormCreator";
 
 import { Router, RouteComponentProps } from "@reach/router";
 import ModuleFavUnfav from "./Modules/FavUnfav";
@@ -22,6 +23,7 @@ ReactDOM.render(
     <App path="/">
       <RouterPage pageComponent={<div>Home</div>} path="/" />
       <RouterPage pageComponent={<ModuleFavUnfav />} path="/favourit-module" />
+      <RouterPage pageComponent={<AppForm />} path="/form" />
       <RouterPage pageComponent={<HomePage />} path="/home" />
       <RouterPage pageComponent={<FavPage />} path="/faves" />
       <RouterPage pageComponent={<TodoList />} path="/todolist" />
