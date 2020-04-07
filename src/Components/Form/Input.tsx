@@ -4,6 +4,7 @@ import { IInput } from "../../Interfaces/interfaces";
 export default function Input({
   id,
   value,
+  placeholder,
   label,
   type,
   onChangeInput,
@@ -12,6 +13,7 @@ export default function Input({
     <label htmlFor={id}>
       {label}
       <input
+        placeholder={placeholder}
         type={type}
         id={id}
         value={value}
